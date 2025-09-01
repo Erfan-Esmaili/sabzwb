@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^41.4.2",
+    "countup.js": "^2.8.2",
+    "fastest-validator": "^1.19.1",
+    "swiper": "^11.2.6",
+    "typewriter-effect": "^2.22.0"
+  }
+}

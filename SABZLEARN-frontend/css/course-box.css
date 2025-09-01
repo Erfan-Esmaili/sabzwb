@@ -1,0 +1,56 @@
+/** courses content  */
+
+.courses__box {
+  box-shadow: 0px 0px 19px rgba(168, 172, 185, 0.3) ;
+  transition: all 0.3s ease;
+}
+
+
+.courses-box__img{
+  transition: all 0.6s ease;
+}
+.courses-box__img:hover {
+  transform: scale(1.09);
+}
+
+.courses-box__title {
+  font-weight: 600;
+}
+.courses-box__teacher-icon {
+  color: #6c757d;
+}
+
+.search-box__star{
+  margin: -0.3rem;
+}
+.courses-box__users-icon{
+  color: #6c757d;
+  font-size: 1.6rem;
+}
+.courses-box__users-text{
+  color: #6c757d;
+font-size: 1.4rem;
+font-weight: 600;
+}
+.courses-box__price {
+  color: #4e4e4e;
+  font-size: 1.5rem;
+font-weight: 600;
+  
+}
+
+.courses-box__footer:hover :only-child{
+  color: #1e83f0;
+}
+.courses-box__footer-link {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fa-arrow-left {
+  color: var(--primary-color);
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+/* !!finish latest courses styles */

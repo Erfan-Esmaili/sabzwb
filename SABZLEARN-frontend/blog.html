@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مقالات</title>
+  <!-- favicon -->
+  <link rel="icon" sizes="32x32" href="./images/logo/download.png" type="image/png">
+
+
+  <!--Fontawesom  -->
+  <link rel="stylesheet" href="./vendor/Fontawesom/all.min.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./vendor/Bootstrap/bootstrap.min.css">
+  <!-- reset -->
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <link rel="stylesheet" href="./css/blog.css">
+
+</head>
+
+<body>
+  <!-- ?? start header -->
+
+  <header class="header">
+    <div class="top-bar d-none d-lg-block">
+      <div class="container-fluid">
+        <div class="top-bar__content">
+          <div class="top-bar__right">
+            <ul class="top-bar__menu">
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">آموزش HTML</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">آموزش CSS</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">آموزش جاوااسکریپت</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">بوت استرپ HTML</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">پایتون HTML</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">ریکت HTML</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">20,000 تومان</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="top-bar__left">
+            <div class="top-bar__email">
+              <a href="#" class="top-bar__email-text top-bar__link">erfan.esmaili1382@gmail.com</a>
+              <i class="fas fa-envelope top-bar__email-icon"></i>
+            </div>
+            <div class="top-bar__phone">
+              <a href="#" class="top-bar__phone-text top-bar__link">09138036135</a>
+              <i class="fas fa-phone top-bar__phone-icon"></i>
+
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="main-header p-3">
+      <div class="container-fluid">
+        <div class="main-header__content justify-content-between">
+
+
+          <!-- !!Start Responsive -->
+
+          <a class="btn btn-success hamburger-menu-btn d-flex justify-content-center align-items-center d-block d-lg-none"
+            data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fas fa-bars fs-1"></i>
+          </a>
+
+          <!-- **offcanvas -->
+          <div class="offcanvas offcanvas-end offcanvas-menu" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header d-flex justify-content-between">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+              <button type="button" class="btn-close m-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+              <ul class="main-header__menu" id="menuWrapperResponsive">
+                <!-- <li class="main-header__item dropdown-item">
+                  <a href="#" class="main-header__link">صفحه اصلی</a>
+                </li> -->
+                <!--  -->
+              </ul>
+
+            </div>
+          </div>
+
+
+          <!-- !!End Responsive -->
+
+          <div class="main-header__right d-none d-lg-flex">
+            <img class="img-header__logo img-fluid" src="./images/logo/download.png" alt="logo">
+            <ul class="main-header__menu" id="menuWrapper">
+              <li class="main-header__item">
+                <a href="#" class="main-header__link">صفحه اصلی</a>
+              </li>
+
+
+
+            </ul>
+
+
+          </div>
+
+          <div class="main-header__left">
+            <a href="#" class="main-header__search-btn">
+              <i class="fa fa-search main-header__search-icon"></i>
+            </a>
+            <a href="#" class="main-header__cart-btn">
+              <i class="fa fa-shopping-cart main-header__cart-icon"></i>
+            </a>
+            <a href="#" class="main-header__profile">
+              <!-- !username from JS -->
+            </a>
+
+
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <!-- ?? finish header --> <!-- * Start Breadcrumb -->
+
+  <section class="breadcrumb">
+    <div class="container">
+      <div class="breadcrumb-content rounded-3">
+        <div class="breadcrumb__home-content-icon rounded-3">
+          <i class="fas fa-home breadcrumb__home-icon"></i>
+        </div>
+
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">
+              خانه
+              <i class="fas fa-angle-left breadcrumb-icon"></i>
+            </a>
+          </li>
+          <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">
+              آموزش برنامه فرانت اند
+              <i class="fas fa-angle-left breadcrumb-icon"></i>
+            </a>
+          </li>
+          <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">
+              دوره متخصص جاوااسکریپت </a>
+          </li>
+
+
+
+        </ul>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- *Finish Breadcrumb -->
+
+  <!-- **Start Main Info Section -->
+  <main class="main">
+    <div class="container">
+      <div class="row">
+        <!-- ?Right side -->
+        <div class="col-8">
+          <div class="article">
+            <div class="article-title">
+              <h1>
+                یادگیری زبان برنامه نویسی پایتون برای هوش مصنوعی؛ از کجا شروع کنیم؟
+              </h1>
+            </div>
+
+            <div class="article-header">
+              <div class="article-header__category article-header__item">
+                <i class="fas fa-folder article-header__icon"></i>
+                <a href="#" class="article-header__text">جاوااسکریپت</a>
+              </div>
+              <div class="article-header__category article-header__item">
+                <i class="fas fa-user article-header__icon"></i>
+                <span class="article-header__text">ارسال شده توسط عرفان</span>
+              </div>
+              <div class="article-header__category article-header__item">
+                <i class="fas fa-clock article-header__icon"></i>
+                <span class="article-header__text">1403/02/23</span>
+              </div>
+
+              <div class="article-header__category article-header__item">
+                <i class="fas fa-eye article-header__icon"></i>
+                <span class="article-header__text">2.14K بازدید</span>
+              </div>
+
+            </div>
+
+            <img class="w-100 rounded-4" src="./images/blogs/pyai1.jpg" alt="img blog">
+
+
+            <!-- *article score -->
+            <div class="article__score">
+              <div class="article__score-icon">
+                <img src="./images/svgs/star_fill.svg" alt="article score">
+                <img src="./images/svgs/star_fill.svg" alt="article score">
+                <img src="./images/svgs/star_fill.svg" alt="article score">
+                <img src="./images/svgs/star_fill.svg" alt="article score">
+                <img src="./images/svgs/star_fill.svg" alt="article score">
+                <img src="./images/svgs/star.svg" alt="article score">
+              </div>
+              <span class="article__score-txt">4.5 - (5 امتیاز)</span>
+
+
+            </div>
+
+
+            <p class="article__paragraph paragraph">
+              دنیای هوش مصنوعی مانند یک کهکشان پر ستاره است‌. مملو از فرصت‌های هیجان‌انگیز، چالش‌های تازه و آینده‌ای که
+              هنوز نوشته نشده. هرکسی که کمی با دنیای فناوری آشنا باشه، دیر یا زود وسوسه می‌شه وارد این مسیر بشه. اما یک
+              سوال مهم سر راه ما وجود داره که از کجا شروع کنیم؟ به‌خصوص وقتی حرف از یادگیری هوش مصنوعی با زبان برنامه
+              نویسی پایتون باشه.پایتون این روزها تبدیل به زبان مشترک پژوهشگران، برنامه‌نویسان و حتی هنرمندان در دنیای
+              هوش مصنوعی شده! ترکیب ساده‌ نویسی پایتون با قدرت کتابخانه‌های فوق‌العاده‌اش باعث شده حتی کسانی که تازه
+              وارد دنیای برنامه‌ نویسی شدن هم بتونن خیلی زود پروژه‌های هوش مصنوعی بسازن و از دیدن نتیجه کارشون شگفت‌زده
+              بشن.
+            </p>
+
+
+            <div class="article-headline simple-list-example-scrollspy" id="simple-list-example">
+              <p class="article-headline__title">سرفصل های این مقاله:</p>
+              <ul class="article-headline__list">
+                <li class="article-headline__item">
+                  <a href="#simple-list-item-1" class="article-headline__link">
+                    چرا پایتون بهترین انتخاب برای یادگیری هوش مصنوعی است؟
+                  </a>
+                </li>
+                <li class="article-headline__item">
+                  <a href="#simple-list-item-2" class="article-headline__link">
+                    قبل از شروع هوش مصنوعی، چقدر باید پایتون بلد باشی؟
+                  </a>
+                </li>
+                <li class="article-headline__item">
+                  <a href="#simple-list-item-3" class="article-headline__link">
+                    اشتباهات رایجی که باید ازشون دوری کنی!
+                  </a>
+                </li>
+
+
+              </ul>
+
+
+            </div>
+
+            <img class="d-flex justify-content-center m-auto img-fluid" src="./images/blogs/2.jpg" alt="article image">
+
+            <div class="article-section">
+
+              <div class="article-section__item" id="simple-list-item-1">
+                <h2 class="article-section__title">
+                  چرا پایتون بهترین انتخاب برای یادگیری هوش مصنوعی است؟
+                </h2>
+
+                <p class="article-section__description paragraph">
+                  وقتی صحبت از یادگیری هوش مصنوعی می‌شه، انتخاب زبان برنامه‌ نویسی مثل انتخاب کفش مناسب برای یک سفر
+                  طولانی مهمه. زبان انتخابی باید راحت، قابل اعتماد و انعطاف‌پذیر باشه. در این میان، پایتون تقریبا
+                  بی‌رقیب‌‌ترین گزینه برای شروع این مسیر محسوب می‌شه. به‌خاطر این‌که همون ویژگی‌هایی رو داره که یک زبان
+                  برنامه‌ نویسی خوب برای یادگیری هوش مصنوعی باید داشته باشه.یکی از بزرگ‌ترین مزایای پایتون، سینتکس ساده
+                  و قابل فهمشه. کدهایی که با پایتون نوشته می‌شن، بیشتر شبیه جملات زبان انگلیسی هستن تا دستورات پیچیده‌ی
+                  ماشینی. این موضوع باعث می‌شه افراد تازه‌کار بدون اینکه درگیر پیچیدگی‌های فنی بشن، خیلی راحت با منطق
+                  برنامه‌نویسی آشنا بشن. در دنیای هوش مصنوعی که پر از مفاهیم انتزاعی و الگوریتم‌های پیچیده‌ هست، چنین
+                  زبانی نعمت بزرگیه چون تمرکز یادگیری رو از کدنویسی، به‌خود مفاهیم هوش مصنوعی منتقل می‌کنه.
+                </p>
+
+                <img class="d-block flex justify-content-center m-auto img-fluid" src="./images/blogs/3.jpg"
+                  alt="article image">
+              </div>
+              <div class="article-section__item" id="simple-list-item-2">
+                <h2 class="article-section__title">
+                  قبل از شروع هوش مصنوعی، چقدر باید پایتون بلد باشی؟
+                </h2>
+
+                <p class="article-section__description paragraph">
+                  وقتی صحبت از یادگیری هوش مصنوعی می‌شه، انتخاب زبان برنامه‌ نویسی مثل انتخاب کفش مناسب برای یک سفر
+                  طولانی مهمه. زبان انتخابی باید راحت، قابل اعتماد و انعطاف‌پذیر باشه. در این میان، پایتون تقریبا
+                  بی‌رقیب‌‌ترین گزینه برای شروع این مسیر محسوب می‌شه. به‌خاطر این‌که همون ویژگی‌هایی رو داره که یک زبان
+                  برنامه‌ نویسی خوب برای یادگیری هوش مصنوعی باید داشته باشه.یکی از بزرگ‌ترین مزایای پایتون، سینتکس ساده
+                  و قابل فهمشه. کدهایی که با پایتون نوشته می‌شن، بیشتر شبیه جملات زبان انگلیسی هستن تا دستورات پیچیده‌ی
+                  ماشینی. این موضوع باعث می‌شه افراد تازه‌کار بدون اینکه درگیر پیچیدگی‌های فنی بشن، خیلی راحت با منطق
+                  برنامه‌نویسی آشنا بشن. در دنیای هوش مصنوعی که پر از مفاهیم انتزاعی و الگوریتم‌های پیچیده‌ هست، چنین
+                  زبانی نعمت بزرگیه چون تمرکز یادگیری رو از کدنویسی، به‌خود مفاهیم هوش مصنوعی منتقل می‌کنه.
+                </p>
+
+                <img class="d-block m-auto img-fluid" src="./images/blogs/4.jpg" alt="article image">
+              </div>
+              <div class="article-section__item" id="simple-list-item-3">
+                <h2 class="article-section__title">
+                  اشتباهات رایجی که باید ازشون دوری کنی! </h2>
+
+                <p class="article-section__description paragraph">
+                  وقتی صحبت از یادگیری هوش مصنوعی می‌شه، انتخاب زبان برنامه‌ نویسی مثل انتخاب کفش مناسب برای یک سفر
+                  طولانی مهمه. زبان انتخابی باید راحت، قابل اعتماد و انعطاف‌پذیر باشه. در این میان، پایتون تقریبا
+                  بی‌رقیب‌‌ترین گزینه برای شروع این مسیر محسوب می‌شه. به‌خاطر این‌که همون ویژگی‌هایی رو داره که یک زبان
+                  برنامه‌ نویسی خوب برای یادگیری هوش مصنوعی باید داشته باشه.یکی از بزرگ‌ترین مزایای پایتون، سینتکس ساده
+                  و قابل فهمشه. کدهایی که با پایتون نوشته می‌شن، بیشتر شبیه جملات زبان انگلیسی هستن تا دستورات پیچیده‌ی
+                  ماشینی. این موضوع باعث می‌شه افراد تازه‌کار بدون اینکه درگیر پیچیدگی‌های فنی بشن، خیلی راحت با منطق
+                  برنامه‌نویسی آشنا بشن. در دنیای هوش مصنوعی که پر از مفاهیم انتزاعی و الگوریتم‌های پیچیده‌ هست، چنین
+                  زبانی نعمت بزرگیه چون تمرکز یادگیری رو از کدنویسی، به‌خود مفاهیم هوش مصنوعی منتقل می‌کنه.
+                </p>
+
+                <img class="d-block m-auto img-fluid" src="./images/blogs/5.jpg" alt="article image">
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+
+          <!-- ?suggestion article -->
+
+          <div class="other-articles">
+            <div class="header__other-articles d-flex align-items-center gap-3">
+              <i class="fa-solid fa-book-open header__other-articles-icon"></i>
+              <span class="header__other-articles-txt">پیشنهاد مطالعه</span>
+            </div>
+
+
+            <div class="body__other-article mt-5">
+              <div class="row gap-3 d-flex justify-content-center">
+                <div class="col-6 other-article__item">
+                  <img class=" other-article__item-img" src="./images/blogs/CMD.jpg" alt="">
+                  <div class="body__other-article__txt-content">
+                    <a href="#" class="body__other-article__txt-content-title">راهنمای جامع دستورات CMD | آموزش کامل با
+                      مثال‌های کاربردی</a>
+
+                    <div class="body__other-article__date">
+                      <i class="fas fa-calendar"></i>
+                      <span>1404/02/30</span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-6 other-article__item">
+                  <img class=" other-article__item-img" src="./images/blogs/arz1.webp" alt="">
+                  <div class="body__other-article__txt-content">
+                    <a href="#" class="body__other-article__txt-content-title">برنامه‌نویس‌ها چطور از دنیای کریپتو پول
+                      درمیارن؟</a>
+
+                    <div class="body__other-article__date">
+                      <i class="fas fa-calendar"></i>
+                      <span>1402/02/30</span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-6 other-article__item">
+                  <img class=" other-article__item-img" src="./images/blogs/pyai1.jpg" alt="">
+                  <div class="body__other-article__txt-content">
+                    <a href="#" class="body__other-article__txt-content-title">برنامه‌نویس‌ها چطور از دنیای کریپتو پول
+                      درمیارن؟</a>
+
+                    <div class="body__other-article__date">
+                      <i class="fas fa-calendar"></i>
+                      <span>1402/02/30</span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-6 other-article__item">
+                  <img class=" other-article__item-img" src="./images/blogs/wo1.jpg" alt="">
+                  <div class="body__other-article__txt-content">
+                    <a href="#" class="body__other-article__txt-content-title">وردپرس یا سایت با کدنویسی اختصاصی؟ اگر
+                      تازه‌کاری، این مطلب نجاتت می‌ده!</a>
+
+                    <div class="body__other-article__date">
+                      <i class="fas fa-calendar"></i>
+                      <span>1402/02/30</span>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- !!comments -->
+
+          <div class="comments">
+            <span class="comments__title">دیدگاه تان را بنویسید</span>
+            <span class="comment__text">
+              <a href="#">
+                با عنوان عرفان اسماعیلی وارد شده اید.
+              </a>
+              <a href="#">
+                خارج می شوید؟
+              </a>
+              بخش های مورد نیاز علامت گذاری شده اند. <span class="text-danger">*</span>
+            </span>
+
+            <div class="comment__content">
+              <span class="comment__content-title">دیدگاه<span class="text-danger">*</span></span>
+              <textarea class="comment__textarea"></textarea>
+            </div>
+            <button class="btn comment__btn">ارسال دیدگاه</button>
+
+          </div>
+
+
+
+
+        </div>
+
+        <!-- ?left Side -->
+
+        <div class="col-4">
+          <div class="all-courses-info">
+            <div class="course-info">
+              <div class="course-info__courses-list-content">
+                <span class="course-info__courses-list-title">پر امتیازترین محصولات</span>
+                <ul class="course-info__courses-list">
+                  <li class="course-info__courses-list-item">
+                    <a href="#" class="course-info__courses-list-link">
+                      <img src="./images/courses/jango.png" class="courses-list-item__img" alt="Course cover">
+                      <span>دوره متخصص جنگو</span>
+                    </a>
+
+                  </li>
+                  <li class="course-info__courses-list-item">
+                    <a href="#" class="course-info__courses-list-link">
+                      <img src="./images/courses/nodejs.png" class="courses-list-item__img" alt="Course cover">
+                      <span>دوره متخصص نودجی اس</span>
+                    </a>
+
+                  </li>
+                  <li class="course-info__courses-list-item">
+                    <a href="#" class="course-info__courses-list-link">
+                      <img src="./images/courses/youtuber.png" class="courses-list-item__img" alt="Course cover">
+                      <span>دوره یوتیوب</span>
+                    </a>
+
+                  </li>
+                  <li class="course-info__courses-list-item">
+                    <a href="#" class="course-info__courses-list-link">
+                      <img src="./images/courses/fareelancer.png" class="courses-list-item__img" alt="Course cover">
+                      <span>دوره متخصص جاوااسکریپت</span>
+                    </a>
+
+                  </li>
+                </ul>
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+            <div class="course-info">
+              <div class="course-info__courses-list-content">
+                <span class="course-info__courses-list-title">دسترسی سریع</span>
+                <ul class="sidebar-article-list d-flex flex-column">
+                  <li class="sidebar-article-item border-bottom">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      صفحه اصلی
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      فرانت اند
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      امنیت
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      پایتون
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      مهارت نرم
+                    </a>
+                  </li>
+                </ul>
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+            <div class="course-info">
+              <div class="course-info__courses-list-content">
+                <span class="course-info__courses-list-title">دسترسی سریع</span>
+                <ul class="last-article-list d-flex flex-column">
+                  <li class="last-article-item">
+                    <a href="#" class="last-article-item__link">
+                      آموزش و نحوه نصب کتابخانه در پایتون
+                    </a>
+                  </li>
+                  <li class="last-article-item">
+                    <a href="#" class="last-article-item__link">
+                      آموزش و نحوه نصب کتابخانه در پایتون
+                    </a>
+                  </li>
+                  <li class="last-article-item">
+                    <a href="#" class="last-article-item__link">
+                      آموزش و نحوه نصب کتابخانه در پایتون
+                    </a>
+                  </li>
+                  <li class="last-article-item">
+                    <a href="#" class="last-article-item__link">
+                      آموزش و نحوه نصب کتابخانه در پایتون
+                    </a>
+                  </li>
+                  <li class="last-article-item">
+                    <a href="#" class="last-article-item__link">
+                      آموزش و نحوه نصب کتابخانه در پایتون
+                    </a>
+                  </li>
+                  <li class="last-article-item">
+                    <a href="#" class="last-article-item__link">
+                      آموزش و نحوه نصب کتابخانه در پایتون
+                    </a>
+                  </li>
+
+                </ul>
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+            <div class="course-info">
+              <div class="course-info__courses-list-content">
+                <span class="course-info__courses-list-title">دسته بندی مقالات</span>
+                <ul class="sidebar-article-list d-flex flex-column">
+                  <li class="sidebar-article-item border-bottom">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      صفحه اصلی
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      فرانت اند
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      امنیت
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      پایتون
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      مهارت نرم
+                    </a>
+                  </li>
+                </ul>
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+            <div class="course-info">
+              <div class="course-info__courses-list-content">
+                <span class="course-info__courses-list-title">دوره های جدید</span>
+                <ul class="sidebar-article-list d-flex flex-column">
+                  <li class="sidebar-article-item border-bottom">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      صفحه اصلی
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      فرانت اند
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      امنیت
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      پایتون
+                    </a>
+                  </li>
+                  <li class="sidebar-article-item">
+                    <i class="fas fa-angle-left sidebar-article-item__icon"></i>
+                    <a href="#" class="sidebar-article-item__txt">
+                      مهارت نرم
+                    </a>
+                  </li>
+                </ul>
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+  </main>
+
+
+
+  <!-- **Finish Main Info Section -->
+
+
+
+
+
+  <!-- !!Start Footre -->
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row row-cols-2 d-flex justify-content-between align-items-center pt-5">
+          <div class="col footer-logo">
+            <a href="#">
+              <img class="footer-logo__img" src="./images/logo/download.png" alt="logo">
+            </a>
+          </div>
+          <div class="col footer-socialmedia__icon d-flex justify-content-end gap-4">
+            <div class="footer-socialmedia__icon-content">
+              <a href="https://www.linkedin.com/in/erfan-esmaeili-561aab293" class="footer-socialmadia__link">
+                <i class="fa-brands fa-linkedin-in footer-socialmedia__icon-item"></i>
+              </a>
+            </div>
+            <div class="footer-socialmedia__icon-content">
+              <a href="https://www.instagram.com/erfan.sml" class="footer-socialmadia__link">
+                <i class="fa-brands fa-instagram footer-socialmedia__icon-item"></i>
+              </a>
+            </div>
+            <div class="footer-socialmedia__icon-content">
+              <a href="#" class="footer-socialmadia__link">
+                <i class="fa-brands fa-telegram footer-socialmedia__icon-item"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-5 d-flex flex-column align-items-start gap-4">
+            <span class="footer-title fs-1 fw-bolder  ">درباره ما</span>
+            <div>
+              <span class="text-secondary">شروع هرچیزی سخته، ولی وقتی مسیر درستی رو انتخاب کنی،با خیال راحت و بدون استرس
+                میتونی از مسیر لذت ببری. ما در سبزلرن، توی سفر به دنیای برنامه نویسی کنارت هستیم تا باهم رشد کنیم و از
+                نتیجه زحمات مون لذت ببریم.</span>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="row">
+              <div class="col-6 d-flex flex-column align-items-start gap-4">
+                <a href="#" class="fs-1 fw-bold">دوره های پرطرفدار</a>
+                <a href="#">آموزش پایتون</a>
+                <a href="#">آموزش بوت استرپ</a>
+                <a href="#">دوره طراحی فلکس باکس</a>
+              </div>
+              <div class="col-6 d-flex flex-column align-items-start gap-4">
+                <a href="#" class="fs-1 fw-bold">دسترسی سریع</a>
+                <a href="#">قوانین و مقررات</a>
+                <a href="#">ارسال تیکت</a>
+                <a href="#">همه دوره ها</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 d-flex justify-content-center align-items-center">
+            <a href="https://trustseal.enamad.ir/?id=445206&code=SgLtG6QTvIyffV2cjuiTe4sSPvMqsNSf">
+              <img class="img-fluid" src="./images/logo/enamad.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center py-5">
+          <p> ساخته شده توسط
+            <a href="https://github.com/Erfan-Esmaili" class="text-primary">
+              عرفان اسماعیلی❤️
+            </a>
+          </p>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- !!Finish Footre -->
+
+  <!-- Fontawesom -->
+  <script src="./vendor/Fontawesom/all.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./vendor/Bootstrap/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

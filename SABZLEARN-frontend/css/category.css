@@ -1,0 +1,120 @@
+@import url(./variables.css);
+@import url(./fonts.css);
+@import url(./top-bar.css);
+@import url(./navbar.css);
+@import url(./default.css);
+@import url(./footer.css);
+@import url(./course-box.css);
+@import url(./pagination.css);
+
+/** Start Courses Section */
+
+.courses-top-bar {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem 2rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+/*// loading */
+
+.spinner-border{
+    width: 4rem;
+    height: 4rem;
+}
+
+/* !Right */
+.courses-top-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.courses-top-bar__row-btn,
+.courses-top-bar__column-btn {
+  border: 1px solid #c3c2c2;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.courses-top-bar__icon--active {
+  background-color:var(--primary-color);
+  color: var(--white-color);
+  border-radius: 0.4rem;
+  border: 0;
+}
+
+.courses-top-bar__selection {
+  border: 1px solid #c3c3c3;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1rem;
+  position: relative;
+  max-width: 24rem;
+  transition: all 0.4s ease;
+}
+
+.courses-top-bar__selection:hover {
+  background-color: #1e83f0;
+  color: var(--white-color);
+}
+.courses-top-bar__selection:hover .courses-top-bar-selection-list {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+
+.courses-top-bar-selection-list {
+  display: none;
+  position: absolute;
+  border-bottom: 3.5px solid var(--primary-color);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-radius: 0 0 0.4rem 0.4rem;
+  background-color: var(--white-color);
+  right: 0;
+  top: 3.5rem;
+  font-size: 1.4rem;
+  z-index: 999;
+}
+
+.courses-top-bar__selection:hover .courses-top-bar-selection-list {
+  display: block;
+}
+
+.courses-top-bar-selection-item {
+  padding: 0.6rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  white-space: nowrap;
+}
+.courses-top-bar-selection-item:hover {
+  background-color: #c3c2c2;
+}
+.courses-top-bar-selection-item--active {
+  background-color: #ddd;
+}
+
+/* !Left */
+
+.courses-top-bar__left {
+  display: flex;
+}
+.courses-top-bar__form {
+  position: relative;
+}
+.courses-top-bar__input {
+  border-radius: 0.6rem;
+  border: 2px solid #dcdcdc;
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+}
+.courses-top-bar__search-icon {
+  position: absolute;
+  top: 1.2rem;
+  left: 1rem;
+  cursor: pointer;
+}
+
+/** Finish Courses Section */

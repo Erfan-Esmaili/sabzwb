@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سبزلرن | صفحه اصلی</title>
+  <!-- favicon -->
+  <link rel="icon" sizes="32x32" href="./images/logo/download.png" type="image/png">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+
+  <!--Fontawesom  -->
+  <link rel="stylesheet" href="./vendor/Fontawesom/all.min.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./vendor/Bootstrap/bootstrap.min.css">
+  <!-- reset -->
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+  <!-- ?? start header -->
+
+  <header class="header">
+    <div class="top-bar d-none d-lg-block">
+      <div class="container-fluid">
+        <div class="top-bar__content">
+          <div class="top-bar__right">
+            <ul class="top-bar__menu">
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">آموزش HTML</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">آموزش CSS</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">آموزش جاوااسکریپت</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">بوت استرپ HTML</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">پایتون HTML</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">ریکت HTML</a>
+              </li>
+              <li class="top-bar__item">
+                <a href="#" class="top-bar__link">20,000 تومان</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="top-bar__left">
+            <div class="top-bar__email">
+              <a href="#" class="top-bar__email-text top-bar__link">sabzlearn@gmail.com</a>
+              <i class="fas fa-envelope top-bar__email-icon"></i>
+            </div>
+            <div class="top-bar__phone">
+              <a href="#" class="top-bar__phone-text top-bar__link">09138036135</a>
+              <i class="fas fa-phone top-bar__phone-icon"></i>
+
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="main-header p-3">
+      <div class="container-fluid">
+        <div class="main-header__content justify-content-between">
+
+
+          <!-- !!Start Responsive -->
+
+          <a class="btn btn-success hamburger-menu-btn d-flex justify-content-center align-items-center d-block d-lg-none"
+            data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fas fa-bars fs-1"></i>
+          </a>
+
+          <!-- **offcanvas -->
+          <div class="offcanvas offcanvas-end offcanvas-menu" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header d-flex justify-content-between">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+              <button type="button" class="btn-close m-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+              <ul class="main-header__menu" id="menuWrapperResponsive">
+                <!-- <li class="main-header__item dropdown-item">
+                  <a href="#" class="main-header__link">صفحه اصلی</a>
+                </li> -->
+                <!--  -->
+              </ul>
+
+            </div>
+          </div>
+
+
+          <!-- !!End Responsive -->
+
+          <div class="main-header__right d-none d-lg-flex">
+            <img class="img-header__logo img-fluid" src="./images/logo/download.png" alt="logo">
+            <ul class="main-header__menu" id="menuWrapper">
+              <li class="main-header__item">
+                <a href="#" class="main-header__link">صفحه اصلی</a>
+              </li>
+
+
+
+            </ul>
+
+
+          </div>
+
+          <div class="main-header__left">
+            <a href="#" class="main-header__search-btn">
+              <i class="fa fa-search main-header__search-icon"></i>
+            </a>
+            <a href="./login.html" class="main-header__cart-btn" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-bs-title="صفحه ورورد">
+              <i class="fa-solid fa-arrow-right-to-bracket login-icon"></i>
+            </a>
+            <a href="login.html" class="main-header__profile">
+              <!-- !username from JS -->
+            </a>
+
+
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <!-- ?? finish header -->
+
+  <!-- ** start landing -->
+
+  <section class="landing">
+    <div class="container">
+      <div class="landing__content-title d-flex flex-column align-items-center justify-content-center gap-5">
+
+        <h1 class="landing__title text-white" id="landingTitleText">ما به هر قیمتی دوره اموزشی تولید نمیکنیم!</h1>
+        <h2 class="landing__subtitle text-white">با اکادمی سبزلرن برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن.
+        </h2>
+
+        <div class="landing__searchbar">
+          <input type="text" class="landing__searchbar-input" placeholder="چه چیزی دوست داری یاد بگیری...؟" />
+          <button class="landing__searchbar-btn" type="submit">
+            <i class="fa fa-search landing__searchbar-icon"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="landing__status justify-content-center align-items-cente mt-5 d-sm-flex d-none">
+        <div class="landing__status__item">
+          <img class="img-fluid" src="./images/logo/clock-min.webp" alt="clock-min">
+          <span class="landing-status__Count" id="counter1">13,526</span>
+          <span class="landing-status__text">دقیقه اموزش تولید کردیم</span>
+        </div>
+        <div class="landing__status__item">
+          <img class="img-fluid" src="./images/logo/book-min.webp" alt="clock-min">
+          <span class="landing-status__Count" id="counter2">40</span>
+          <span class="landing-status__text">دوره اموزشی داریم</span>
+        </div>
+        <div class="landing__status__item">
+          <img class="img-fluid" src="./images/logo/conversation-min.webp" alt="clock-min">
+          <span class="landing-status__Count" id="counter3">22,150</span>
+          <span class="landing-status__text">کاربر توی سبزلرن ثبت نام کردن</span>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </section>
+  <!-- ** finish landing -->
+
+  <!-- !!start latest courses -->
+
+  <div class="courses">
+    <div class="container">
+      <div class="courses__header px-4 d-flex justify-content-between">
+        <div class="courses__header-right d-flex flex-column ">
+          <span class="courses__header-title title">جدیدترین دوره ها</span>
+          <span class="courses__header-text">سکوی پرتاب شما به سمت موفقیت</span>
+        </div>
+
+        <div class="courses__header-left d-flex justify-content-center align-items-center">
+          <a href="courses.html?page=1" type="button"
+            class="btn courses__header-link text-white d-flex align-items-center gap-2">تمامی
+            دوره ها
+            <i class="fa fa-arrow-left courses__header-icon text-white fs-4"></i>
+          </a>
+
+        </div>
+
+
+
+      </div>
+      <!-- courses content -->
+
+      <div class="courses__contetn mt-5">
+        <div class="container">
+          <div class="row g-5 row-cols-md-2 row-cols-1" id="courses-container">
+            <!-- **code in js -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- !!finish latest courses -->
+
+  <!--? start about us -->
+
+  <div class="about-us">
+    <div class="container">
+      <!-- *header* -->
+      <div class="about-us__header px-3">
+        <span class="about-us__title title">ما چه کمکی بهتون میکنیم؟</span>
+        <span class="about-us__subtitle">از آنجایی که امادمی سبزلرن یک اکادمی خصوصی هست</span>
+      </div>
+      <!-- *body* -->
+      <div class="container mt-5">
+        <div class="row row-cols-md-2 row-cols-1 g-4">
+          <div>
+            <div class="about-us__box rounded-4">
+              <div class="about-us__box-right">
+                <i class="far fa-copyright about-us__icon"></i>
+              </div>
+              <div class="about-us__box-left d-flex flex-column">
+                <span>تضمین کاملترین محتوا
+                </span>
+                <span>بزار خیالت راحت کنم توی دوره هامون به ریز ترین موارد پرداختیم </span>
+
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <div>
+            <div class="about-us__box rounded-4">
+              <div class="about-us__box-right">
+                <i class="fas fa-headset about-us__icon"></i>
+              </div>
+              <div class="about-us__box-left d-flex flex-column">
+                <span>پشتیبانی دائمی
+                </span>
+                <span>هرجا سوالی داشتی به مشکل خوردی بچه های تیم آمادن که مشکلت رو حل کنن</span>
+
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <div>
+            <div class="about-us__box rounded-4">
+              <div class="about-us__box-right">
+                <i class="fas fa-user-tie about-us__icon"></i>
+              </div>
+              <div class="about-us__box-left d-flex flex-column">
+                <span>سراغ حرفه ای ها رفتیم
+                </span>
+                <span>به جرعت میتونم بگم سخت گیرترین شرایط جذب مدرس داریم چون برامون مهمه </span>
+
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div>
+            <div class="about-us__box rounded-4">
+              <div class="about-us__box-right">
+                <i class="fas fa-chart-simple about-us__icon"></i>
+              </div>
+              <div class="about-us__box-left d-flex flex-column">
+                <span>پروژه محور
+                </span>
+                <span>کل تمرکز ما رو این هستش بعداز تموم شدن دوره شخص بتونه پروژه بزنه</span>
+
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+  <!--? finish about us -->
+
+  <!-- ** Start Popular Courses -->
+
+  <div class="popular">
+    <div class="container">
+      <div class="popular__header py-4 ">
+        <span class="popular__title title">محبوب ترین دوره ها</span>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper row-cols-2" id="popularCorsesContent" pagination="true"
+          pagination-dynamic-bullets="true">
+          <!-- ? code in js -->
+        </div>
+        <!-- نقطه‌های پیمایش (pagination bullets) -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <!--**Finish Popular Courses  -->
+
+
+
+  <!-- !! Start Pre-sell Courses -->
+
+  <div class="presell">
+    <div class="container">
+      <div class="presell__header py-4">
+        <span class="presell__title title">دوره های در حال پیش فروش</span>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="presellCoursesContent">
+          <!-- !code in js -->
+        </div>
+        <!-- نقطه‌های پیمایش (pagination bullets) -->
+        <div class="swiper-pagination mt-3"></div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+  <!--!!Finish Pre-sell Courses  -->
+
+  <!-- ? Start article -->
+
+  <section class="article">
+    <div class="container">
+
+
+      <div class="article__header d-flex justify-content-between px-4">
+        <div class="article__header-right d-flex flex-column ">
+          <span class="article__header-title title">جدیدترین مقالات</span>
+          <span class="article__header-text">پیش به سوی ارتقای دانش</span>
+        </div>
+
+        <div class="article__header-left d-flex justify-content-center align-items-center">
+          <a href="courses.html?page=1" type="button" class="btn article__header-link text-white">تمامی مقالات
+            <i class="fa fa-arrow-left courses__header-icon text-white fs-4"></i>
+          </a>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="article__content">
+        <div class="row g-3 row-cols-1 row-cols-md-2 row-cols-lg-3" id="articleContent">
+          <!--! data from JS -->
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+
+
+  <!-- ? Finish article -->
+
+  <!-- !!Start Footre -->
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row row-cols-2 d-flex justify-content-between align-items-center pt-5">
+          <div class="col footer-logo">
+            <a href="#">
+              <img class="footer-logo__img" src="./images/logo/download.png" alt="logo">
+            </a>
+          </div>
+          <div class="col footer-socialmedia__icon d-flex justify-content-end gap-4">
+            <div class="footer-socialmedia__icon-content">
+              <a href="https://www.linkedin.com/in/erfan-esmaeili-561aab293" class="footer-socialmadia__link">
+                <i class="fa-brands fa-linkedin-in footer-socialmedia__icon-item"></i>
+              </a>
+            </div>
+            <div class="footer-socialmedia__icon-content">
+              <a href="https://www.instagram.com/erfan.sml" class="footer-socialmadia__link">
+                <i class="fa-brands fa-instagram footer-socialmedia__icon-item"></i>
+              </a>
+            </div>
+            <div class="footer-socialmedia__icon-content">
+              <a href="#" class="footer-socialmadia__link">
+                <i class="fa-brands fa-telegram footer-socialmedia__icon-item"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-5 d-flex flex-column align-items-start gap-4">
+            <span class="footer-title fs-1 fw-bolder  ">درباره ما</span>
+            <div>
+              <span class="text-secondary">شروع هرچیزی سخته، ولی وقتی مسیر درستی رو انتخاب کنی،با خیال راحت و بدون استرس
+                میتونی از مسیر لذت ببری. ما در سبزلرن، توی سفر به دنیای برنامه نویسی کنارت هستیم تا باهم رشد کنیم و از
+                نتیجه زحمات مون لذت ببریم.</span>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="row">
+              <div class="col-6 d-flex flex-column align-items-start gap-4">
+                <a href="#" class="fs-1 fw-bold">دوره های پرطرفدار</a>
+                <a href="#">آموزش پایتون</a>
+                <a href="#">آموزش بوت استرپ</a>
+                <a href="#">دوره طراحی فلکس باکس</a>
+              </div>
+              <div class="col-6 d-flex flex-column align-items-start gap-4">
+                <a href="#" class="fs-1 fw-bold">دسترسی سریع</a>
+                <a href="#">قوانین و مقررات</a>
+                <a href="#">ارسال تیکت</a>
+                <a href="#">همه دوره ها</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 d-flex justify-content-center align-items-center">
+            <a href="https://trustseal.enamad.ir/?id=445206&code=SgLtG6QTvIyffV2cjuiTe4sSPvMqsNSf">
+              <img class="img-fluid" src="./images/logo/enamad.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center py-5">
+          <p> ساخته شده توسط
+            <a href="https://github.com/Erfan-Esmaili" class="text-primary">
+              عرفان اسماعیلی❤️
+            </a>
+          </p>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- !!Finish Footre -->
+
+  <!-- CountUp -->
+  <script src="../node_modules/countup.js/dist/countUp.umd.js"></script>
+  <script src="./js/countup.js"></script>
+  <!-- typewriter -->
+  <script src="../node_modules/typewriter-effect/dist/core.js"></script>
+  <script src="./js/typewriter.js"></script>
+  <!-- swiper -->
+  <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+
+  <!-- <script src="./js/swiper.js"></script> -->
+  <!-- Fontawesom -->
+  <script src="./vendor/Fontawesom/all.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./vendor/Bootstrap/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./js/index.js"></script>
+  <script type="module" src="./js/share.js"></script>
+  <script type="module" src="./js/funcs/shared.js"></script>
+
+</body>
+
+</html>
