@@ -37,7 +37,7 @@ const logout = () => {
             "",
             "",
             () => {
-              location.href = "../../index.html";
+              location.href = "/SABZLEARN-frontend/index.html";
             }
           );
         }

@@ -41,7 +41,7 @@ const register = async() => {
           );
 
           setTimeout(() => {
-            location.href = "index.html";
+            location.href = "/SABZLEARN-frontend/index.html";
           }, 2000);
 
           nameInput.value = "";
@@ -129,7 +129,7 @@ const login = () => {
 
         // **Enter to main page
         setTimeout(() => {
-          location.href = "index.html";
+          location.href = "/SABZLEARN-frontend/index.html";
         }, 2000);
       } else {
         // !showSwal
