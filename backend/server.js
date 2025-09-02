@@ -18,8 +18,7 @@ dotenv.config();
 })();
 
 
-// تغییر پورت پیش فرض از 3000 به 5000
-const port = +process.env.PORT || 5000;
+const port = +process.env.PORT || 3000;
 
 const productionMode = process.env.NODE_ENV === 'production'
 app.listen(port, () => {
