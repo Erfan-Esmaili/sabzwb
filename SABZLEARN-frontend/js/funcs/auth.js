@@ -150,7 +150,7 @@ const login = () => {
           "نام کاربری وجود ندارد. ابتدا ثبت نام کنید",
           "50rem",
           (result) => {
-            location.href = "register.html";
+            location.href = "SABZLEARN-frontend/register.html";
           }
         );
       }

@@ -26,7 +26,7 @@ const showUserNameInNavbar = () => {
     <i class="fas fa-user-plus ms-1"></i>
     <span class="main-header__profile-text d-none d-lg-block">ورود/ثبت نام</span>
       `;
-    userNameBox.setAttribute("href", "register.html");
+    userNameBox.setAttribute("href", "SABZLEARN-frontend/register.html");
   }
 };
 
