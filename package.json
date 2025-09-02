@@ -1,8 +1,20 @@
 {
+  "name": "sabzlearn",
+  "version": "1.0.0",
+  "description": "Sabzlearn fullstack project",
+  "main": "backend/index.js",
+  "scripts": {
+    "prestart": "npm run build-frontend",
+    "start": "node backend/index.js",
+    "build-frontend": "cd SABZLEARN-frontend && npm install && npm run build"
+  },
+  "author": "Erfan Esmaeili",
+  "license": "ISC",
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^41.4.2",
     "countup.js": "^2.8.2",
     "swiper": "^11.2.6",
-    "typewriter-effect": "^2.22.0"
+    "typewriter-effect": "^2.22.0",
+    "sweetalert2": "^11.21.2"
   }
 }
