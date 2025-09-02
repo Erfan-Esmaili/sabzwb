@@ -222,9 +222,9 @@ ${Array(popular.courseAverageScore)
       });
     });
 
-    // !Swiper
+  // !Swiper
 
-handleSwiper()
+  handleSwiper();
 };
 
 const presellCourses = async () => {
@@ -299,9 +299,9 @@ const presellCourses = async () => {
         );
       });
     });
-    
-    // !Swiper
-    handleSwiper()
+
+  // !Swiper
+  handleSwiper();
 };
 
 const article = async () => {
@@ -1240,7 +1240,7 @@ const contactUs = async () => {
       );
       // **Enter to main page
       setTimeout(() => {
-        location.href = "/SABZLEARN-frontend/index.html";
+        location.href = "SABZLEARN-frontend/index.html";
       }, 2000);
 
       nameInput.value = "";

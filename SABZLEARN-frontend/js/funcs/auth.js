@@ -3,7 +3,7 @@ import { showSwal, setToLocalStorage, getToken } from "./utils.js";
 let $ = document;
 
 // ?register
-const register = async() => {
+const register = async () => {
   let nameInput = $.querySelector("#name");
   let usernameInput = $.querySelector("#username");
   let emailInput = $.querySelector("#email");
@@ -21,7 +21,7 @@ const register = async() => {
   };
 
   if (passwordInput.value.trim() === confirmPasswordInput.value.trim()) {
-   await fetch(`http://localhost:4000/v1/auth/register`, {
+    await fetch(`http://localhost:4000/v1/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,7 +41,7 @@ const register = async() => {
           );
 
           setTimeout(() => {
-            location.href = "/SABZLEARN-frontend/index.html";
+            location.href = "SABZLEARN-frontend/index.html";
           }, 2000);
 
           nameInput.value = "";
@@ -60,9 +60,11 @@ const register = async() => {
             "باشه",
             "نام کاربری یا ایمیل قبلا ثبت شده!",
             "50rem",
-           ()=>{''}
+            () => {
+              "";
+            }
           );
-        }else if (Response.status == 403) {
+        } else if (Response.status == 403) {
           showSwal(
             "خطا",
             "error",
@@ -72,7 +74,9 @@ const register = async() => {
             "باشه",
             "شماره تماس منع شده است. با این شماره نمی توانید ثبت نام کنید",
             "50rem",
-           ()=>{''}
+            () => {
+              "";
+            }
           );
         }
 
@@ -80,7 +84,7 @@ const register = async() => {
       })
       .then((data) => {
         // console.log(data.accessToken),
-          setToLocalStorage("user", { token: data.accessToken });
+        setToLocalStorage("user", { token: data.accessToken });
       })
       .catch((err) => console.log("خطا", err));
   } else {
@@ -93,7 +97,9 @@ const register = async() => {
       "تایید",
       "رمز عبور و تکرار رمز عبور باید یکسان باشد",
       "",
-      ()=>{''}
+      () => {
+        "";
+      }
     );
   }
 };
@@ -129,7 +135,7 @@ const login = () => {
 
         // **Enter to main page
         setTimeout(() => {
-          location.href = "/SABZLEARN-frontend/index.html";
+          location.href = "SABZLEARN-frontend/index.html";
         }, 2000);
       } else {
         // !showSwal
@@ -140,13 +146,13 @@ const login = () => {
           true,
           "",
           "",
-          'ثبت نام ',
-          'نام کاربری وجود ندارد. ابتدا ثبت نام کنید',
-          '50rem',
-          (result)=>{
+          "ثبت نام ",
+          "نام کاربری وجود ندارد. ابتدا ثبت نام کنید",
+          "50rem",
+          (result) => {
             location.href = "register.html";
           }
-        )
+        );
       }
       return Response.json();
     })
@@ -169,4 +175,4 @@ const getMe = async () => {
 };
 
 // !!EXPORT
-export { register, login, getMe ,getToken};
+export { register, login, getMe, getToken };

@@ -12,38 +12,35 @@ const getAdminInfos = async () => {
   return admin;
 };
 
-
 const logout = () => {
-  
-    showSwal(
-      "خروج از حساب کاربری",
-      "warning",
-      true,
-      "",
-      "در صورت انصراف دکمه ESC را فشار دهید",
-      "بله",
-      "مطمئنی؟",
-      "",
-      (result) => {
-        if (result.isConfirmed) {
-          localStorage.removeItem('user')
-          showSwal(
-            "با موفقیت از حساب خود خارج شدید",
-            "success",
-            false,
-            1700,
-            "درحال انتقال به صفحه اصلی",
-            "",
-            "",
-            "",
-            () => {
-              location.href = "/SABZLEARN-frontend/index.html";
-            }
-          );
-        }
+  showSwal(
+    "خروج از حساب کاربری",
+    "warning",
+    true,
+    "",
+    "در صورت انصراف دکمه ESC را فشار دهید",
+    "بله",
+    "مطمئنی؟",
+    "",
+    (result) => {
+      if (result.isConfirmed) {
+        localStorage.removeItem("user");
+        showSwal(
+          "با موفقیت از حساب خود خارج شدید",
+          "success",
+          false,
+          1700,
+          "درحال انتقال به صفحه اصلی",
+          "",
+          "",
+          "",
+          () => {
+            location.href = "SABZLEARN-frontend/index.html";
+          }
+        );
       }
-    );
-  
+    }
+  );
 };
 
 export { getAdminInfos, logout };
