@@ -14,7 +14,7 @@ const prepareSendTicketForm = async () => {
     "#user-courses-wrapper"
   );
 
-  const res = await fetch(`http://localhost:4000/v1/tickets/departments`);
+  const res = await fetch(`https://sabz.liara.run/v1/tickets/departments`);
   const departments = await res.json();
 
   console.log(departments);
@@ -31,7 +31,7 @@ const prepareSendTicketForm = async () => {
   ticketsDepartmentsWrapper.addEventListener("change", async (event) => {
     departmentID = event.target.value;
     await fetch(
-      `http://localhost:4000/v1/tickets/departments-subs/${departmentID}`
+      `https://sabz.liara.run/v1/tickets/departments-subs/${departmentID}`
     )
       .then((res) => res.json())
       .then((subDepartment) => {
@@ -78,7 +78,7 @@ const prepareSendTicketForm = async () => {
 const userCoursesRes = async () => {
   let ticketCoursesWrapper = document.getElementById("ticket-courses");
 
-  await fetch("http://localhost:4000/v1/users/courses", {
+  await fetch("https://sabz.liara.run/v1/users/courses", {
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },
@@ -118,7 +118,7 @@ const sendNewTicket = async () => {
     course: userCourseID
   };
 
-  await fetch("http://localhost:4000/v1/tickets", {
+  await fetch("https://sabz.liara.run/v1/tickets", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

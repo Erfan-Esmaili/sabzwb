@@ -6,7 +6,7 @@
   "scripts": {
     "prestart": "npm run build-frontend",
     "start": "node backend/index.js",
-    "build-frontend": "cd SABZLEARN-frontend && npm install && npm run build"
+    "build-frontend": "cd SABZLEARN-frontend && npm install && npm run build",    
   },
   "author": "Erfan Esmaeili",
   "license": "ISC",

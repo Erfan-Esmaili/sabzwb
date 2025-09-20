@@ -1,7 +1,7 @@
 import { getToken, showSwal } from "../../funcs/utils.js";
 
 const getAllCourse = async () => {
-  const res = await fetch(`http://localhost:4000/v1/courses`);
+  const res = await fetch(`https://sabz.liara.run/v1/courses`);
   const courses = res.json();
   courses.then((res) => {
     const coursesTableElem = document.querySelector(".table tbody");
@@ -54,7 +54,7 @@ const prepareCreateCourseForm = async () => {
   let courseStatusStartElem = document.querySelector("#start");
   let courseCoverElem = document.querySelector("#course-cover");
 
-  const res = await fetch(`http://localhost:4000/v1/category`);
+  const res = await fetch(`https://sabz.liara.run/v1/category`);
   const categories = await res.json();
 
   categories.forEach((category) => {
@@ -102,7 +102,7 @@ const createNewCourse = async () => {
   formData.append("status", status);
   formData.append("cover", courseCover);
 
-  let res = await fetch(`http://localhost:4000/v1/courses`, {
+  let res = await fetch(`https://sabz.liara.run/v1/courses`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${getToken()}`,
@@ -125,7 +125,7 @@ const courseRemove = async (courseID) => {
       console.log(result);
 
       if (result.isConfirmed) {
-        await fetch(`http://localhost:4000/v1/courses/${courseID}`, {
+        await fetch(`https://sabz.liara.run/v1/courses/${courseID}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${getToken()}`,

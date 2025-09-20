@@ -789,7 +789,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:4000/v1/offs/all",
+			"url": "{{baseUrl}}/v1/offs/all",
 			"folder": "7c9f5a64-14ed-4742-b243-13941557799c",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -2332,7 +2332,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:4000/v1/users/",
+			"url": "{{baseUrl}}/v1/users/",
 			"folder": "54e8bf45-abf4-ba9c-f73b-9689f911be2b",
 			"queryParams": [],
 			"preRequestScript": null,

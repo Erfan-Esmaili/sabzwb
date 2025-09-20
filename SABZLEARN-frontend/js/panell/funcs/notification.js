@@ -38,7 +38,7 @@ const seenNotification = async (notifications,notificationID) => {
   console.log(notifications,notificationID);
   
   const res = await fetch(
-    `http://localhost:4000/v1/notifications/see/${notificationID}`,
+    `https://sabz.liara.run/v1/notifications/see/${notificationID}`,
     {
       method: "PUT",
       headers: {

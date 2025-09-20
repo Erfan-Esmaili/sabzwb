@@ -3,7 +3,7 @@ import { convertDateToShamsi, showSwal, getToken } from "../../funcs/utils.js";
 const setCampaign = async () => {
   let campaignPercentInput = document.querySelector("#campaign-percent-input");
 
-  await fetch("http://localhost:4000/v1/offs/all", {
+  await fetch("https://sabz.liara.run/v1/offs/all", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${getToken()}`,

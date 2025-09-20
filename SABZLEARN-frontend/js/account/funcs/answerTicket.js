@@ -10,7 +10,7 @@ const showAnswerAndQuestions = async () => {
     ".ticket-send__answer-user-text"
   );
   const ticketAnswerBox = document.querySelector(".ticket-send__answer-text");
-  await fetch(`http://localhost:4000/v1/tickets/answer/${ticketID}`, {
+  await fetch(`https://sabz.liara.run/v1/tickets/answer/${ticketID}`, {
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },

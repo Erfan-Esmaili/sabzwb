@@ -10,7 +10,7 @@ const prepareCreateNewSessionForm = async () => {
   const sessionFreeRadioBtn = document.querySelector("#free");
   const sessionNotFreeRadioBtn = document.querySelector("#not-free");
 
-  const res = await fetch(`http://localhost:4000/v1/courses`);
+  const res = await fetch(`https://sabz.liara.run/v1/courses`);
   const courses = await res.json();
 
   courses.forEach((course) => {
@@ -56,7 +56,7 @@ const createSession = async () => {
   formData.append("free", isFree);
 
   const res = await fetch(
-    `http://localhost:4000/v1/courses/${courseID}/sessions`,
+    `https://sabz.liara.run/v1/courses/${courseID}/sessions`,
     {
       method: "POST",
       headers: {
@@ -87,7 +87,7 @@ const getAndShowAllSessions = async () => {
   const sessionsListElemWrapper = document.querySelector(".table tbody");
   sessionsListElemWrapper.innerHTML = "";
 
-  const res = await fetch(`http://localhost:4000/v1/courses/sessions`);
+  const res = await fetch(`https://sabz.liara.run/v1/courses/sessions`);
   const sessions = await res.json();
 
   sessions.forEach((session, index) => {

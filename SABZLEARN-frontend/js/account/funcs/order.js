@@ -2,7 +2,7 @@ import { getToken ,convertDateToShamsi} from "../../funcs/utils.js";
 const getAndShowUserOrders = async () => {
   let orderTableBody = document.querySelector(".order__table-body");
 
-  await fetch("http://localhost:4000/v1/orders", {
+  await fetch("https://sabz.liara.run/v1/orders", {
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },

@@ -3,7 +3,7 @@ const getAndShowAllTickets = async () => {
   let ticketContentWrapper = document.querySelector(".ticket-content");
   let ticketCountTitle = document.querySelector(".ticket-content__title");
 
-  await fetch("http://localhost:4000/v1/tickets/user", {
+  await fetch("https://sabz.liara.run/v1/tickets/user", {
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },

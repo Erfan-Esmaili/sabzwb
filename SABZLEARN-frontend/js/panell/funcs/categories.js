@@ -4,7 +4,7 @@ const getCategories = async () => {
   let categoryWrapper = document.querySelector(".table tbody");
   categoryWrapper.innerHTML = "";
 
-  await fetch("http://localhost:4000/v1/category")
+  await fetch("https://sabz.liara.run/v1/category")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -46,7 +46,7 @@ const deleteCategory = (categoryID) => {
     "",
     async (result) => {
       if (result.isConfirmed) {
-        await fetch(`http://localhost:4000/v1/category/${categoryID}`, {
+        await fetch(`https://sabz.liara.run/v1/category/${categoryID}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${getToken()}`,
@@ -82,7 +82,7 @@ const addNewCategory = async () => {
     name: hrefInputElem.value.trim(),
   };
 
-  await fetch("http://localhost:4000/v1/category", {
+  await fetch("https://sabz.liara.run/v1/category", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${getToken()}`,

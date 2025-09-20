@@ -6,7 +6,7 @@ const getAllDiscountCode = async () => {
   const discountCodeTableElem = document.querySelector(".table tbody");
   discountCodeTableElem.innerHTML = "";
 
-  await fetch("http://localhost:4000/v1/offs", {
+  await fetch("https://sabz.liara.run/v1/offs", {
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },
@@ -50,7 +50,7 @@ const getAllDiscountCode = async () => {
 
 const selectedCourse = async () => {
   let coursesContent = document.querySelector("#courses-select");
-  await fetch("http://localhost:4000/v1/courses")
+  await fetch("https://sabz.liara.run/v1/courses")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -84,7 +84,7 @@ const createNewDiscount = async () => {
     max: maxUsesInputElem.value.trim(),
   };
 
-  await fetch("http://localhost:4000/v1/offs", {
+  await fetch("https://sabz.liara.run/v1/offs", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${getToken()}`,
@@ -119,7 +119,7 @@ const deleteDiscountCode = async (codeID) => {
     cancelButtonText: "خیر",
   }).then(async (result) => {
     if (result.isConfirmed) {
-      await fetch(`http://localhost:4000/v1/offs/${codeID}`, {
+      await fetch(`https://sabz.liara.run/v1/offs/${codeID}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${getToken()}`,

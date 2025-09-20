@@ -5,7 +5,7 @@ const getAllUserCourses = async () => {
   let courseFilterLinkHeader = document.querySelectorAll(
     ".course-filter__link"
   );
-  await fetch("http://localhost:4000/v1/users/courses/", {
+  await fetch("https://sabz.liara.run/v1/users/courses/", {
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },
@@ -22,7 +22,7 @@ const getAllUserCourses = async () => {
                   <div class="main__box">
             <div class="main__box-right">
                 <a class="main__box-img-link" href="#">
-                    <img class="main__box-img img-fluid" src="http://localhost:4000/courses/covers/${
+                    <img class="main__box-img img-fluid" src="https://sabz.liara.run/courses/covers/${
                       course.course.cover
                     }">
                 </a>
@@ -87,7 +87,7 @@ const getAllUserCourses = async () => {
                   <div class="main__box">
             <div class="main__box-right">
                 <a class="main__box-img-link" href="#">
-                    <img class="main__box-img img-fluid" src="http://localhost:4000/courses/covers/${
+                    <img class="main__box-img img-fluid" src="https://sabz.liara.run/courses/covers/${
                       course.course.cover
                     }">
                 </a>
@@ -142,7 +142,7 @@ const getAllUserCourses = async () => {
                   <div class="main__box">
             <div class="main__box-right">
                 <a class="main__box-img-link" href="#">
-                    <img class="main__box-img img-fluid" src="http://localhost:4000/courses/covers/${
+                    <img class="main__box-img img-fluid" src="https://sabz.liara.run/courses/covers/${
                       course.course.cover
                     }">
                 </a>
@@ -196,7 +196,7 @@ const getAllUserCourses = async () => {
                   <div class="main__box">
             <div class="main__box-right">
                 <a class="main__box-img-link" href="#">
-                    <img class="main__box-img img-fluid" src="http://localhost:4000/courses/covers/${
+                    <img class="main__box-img img-fluid" src="https://sabz.liara.run/courses/covers/${
                       course.course.cover
                     }">
                 </a>
@@ -250,7 +250,7 @@ const getAllUserCourses = async () => {
                   <div class="main__box">
             <div class="main__box-right">
                 <a class="main__box-img-link" href="#">
-                    <img class="main__box-img img-fluid" src="http://localhost:4000/courses/covers/${
+                    <img class="main__box-img img-fluid" src="https://sabz.liara.run/courses/covers/${
                       course.course.cover
                     }">
                 </a>
@@ -300,7 +300,7 @@ const getAllUserCourses = async () => {
                   <div class="main__box">
             <div class="main__box-right">
                 <a class="main__box-img-link" href="#">
-                    <img class="main__box-img img-fluid" src="http://localhost:4000/courses/covers/${
+                    <img class="main__box-img img-fluid" src="https://sabz.liara.run/courses/covers/${
                       course.course.cover
                     }">
                 </a>

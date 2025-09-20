@@ -3,7 +3,7 @@ import { convertDateToShamsi, showSwal, getToken } from "../../funcs/utils.js";
 const getAndShowAllComments = async () => {
   let commentsContentTable = document.querySelector(".table tbody");
   commentsContentTable.innerHTML = "";
-  await fetch("http://localhost:4000/v1/comments")
+  await fetch("https://sabz.liara.run/v1/comments")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -77,7 +77,7 @@ const acceptCommentContent = (commentID) => {
     "",
     async (res) => {
       if (res.isConfirmed) {
-        await fetch(`http://localhost:4000/v1/comments/accept/${commentID}`, {
+        await fetch(`https://sabz.liara.run/v1/comments/accept/${commentID}`, {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${getToken()}`,
@@ -117,7 +117,7 @@ const rejectCommentContent = (commentID) => {
     "",
     async (res) => {
       if (res.isConfirmed) {
-        await fetch(`http://localhost:4000/v1/comments/reject/${commentID}`, {
+        await fetch(`https://sabz.liara.run/v1/comments/reject/${commentID}`, {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${getToken()}`,
@@ -152,7 +152,7 @@ const answerToComment=(commentID)=>{
     confirmButtonText:'ثبت'
   }).then(async(body)=>{
       if(body.isConfirmed){
-       await fetch(`http://localhost:4000/v1/comments/answer/${commentID}`,{
+       await fetch(`https://sabz.liara.run/v1/comments/answer/${commentID}`,{
           method : "POST",
           headers : {
               Authorization : `Bearer ${getToken()}`,
@@ -199,7 +199,7 @@ const removeComment=(commentID)=>{
     "",
     async (res) => {
       if (res.isConfirmed) {
-        await fetch(`http://localhost:4000/v1/comments/${commentID}`, {
+        await fetch(`https://sabz.liara.run/v1/comments/${commentID}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${getToken()}`,

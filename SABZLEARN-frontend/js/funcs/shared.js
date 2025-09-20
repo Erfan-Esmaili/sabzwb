@@ -32,7 +32,7 @@ const showUserNameInNavbar = () => {
 
 const renderTopBarMenus = async () => {
   let topBarList = document.querySelector(".top-bar__menu");
-  const res = await fetch("http://localhost:4000/v1/menus/topbar");
+  const res = await fetch("https://sabz.liara.run/v1/menus/topbar");
   const topBarMenus = await res.json();
 
   topBarList.innerHTML = "";
@@ -52,7 +52,7 @@ const renderTopBarMenus = async () => {
 const getAndShowAllCourses = async () => {
   const coursesContainer = document.querySelector("#courses-container");
 
-  const res = await fetch("http://localhost:4000/v1/courses");
+  const res = await fetch("https://sabz.liara.run/v1/courses");
   const courses = await res.json();
 
   courses.slice(0, 6).map((course) => {
@@ -65,7 +65,7 @@ const getAndShowAllCourses = async () => {
     <div class="col-lg-4 col-md-6 col-12">
     <div class="courses__box rounded-4 overflow-hidden">
     <a href="course.html?name=${course.shortName}">
-    <img class="courses-box__img w-100" src=http://localhost:4000/courses/covers/${
+    <img class="courses-box__img w-100" src=https://sabz.liara.run/courses/covers/${
       course.cover
     } alt="course">
     </a>
@@ -146,7 +146,7 @@ ${Array(course.courseAverageScore)
 const popularCourses = async () => {
   const popularCorsesContent = document.querySelector("#popularCorsesContent");
 
-  await fetch("http://localhost:4000/v1/courses/popular")
+  await fetch("https://sabz.liara.run/v1/courses/popular")
     .then((res) => res.json())
     .then((data) => {
       data.map((popular) => {
@@ -157,7 +157,7 @@ const popularCourses = async () => {
   <div class="swiper-slide">
   <div class="courses__box rounded-4 overflow-hidden">
   <a href="#">
-    <img class="courses-box__img w-100" src="http://localhost:4000/courses/covers/${
+    <img class="courses-box__img w-100" src="https://sabz.liara.run/courses/covers/${
       popular.cover
     }" alt="course">
   </a>
@@ -231,7 +231,7 @@ const presellCourses = async () => {
   const presellCoursesContent = document.querySelector(
     "#presellCoursesContent"
   );
-  await fetch("http://localhost:4000/v1/courses/presell")
+  await fetch("https://sabz.liara.run/v1/courses/presell")
     .then((res) => res.json())
     .then((data) => {
       data.forEach((presell) => {
@@ -242,7 +242,7 @@ const presellCourses = async () => {
         <div class="swiper-slide">
         <div class="courses__box rounded-4 overflow-hidden">
         <a href="#">
-        <img class="courses-box__img w-100" src=http://localhost:4000/courses/covers/${
+        <img class="courses-box__img w-100" src=https://sabz.liara.run/courses/covers/${
           presell.cover
         } alt="course">
         </a>
@@ -307,7 +307,7 @@ const presellCourses = async () => {
 const article = async () => {
   const articleContent = document.querySelector("#articleContent");
 
-  fetch("http://localhost:4000/v1/articles")
+  fetch("https://sabz.liara.run/v1/articles")
     .then((res) => res.json())
     .then((data) => {
       data.slice(0, 6).forEach((article) => {
@@ -317,7 +317,7 @@ const article = async () => {
       <div class="col-lg-4 col-md-6 col-12">
             <div class="card article__card">
               <a href="#" class="article-card__link-img">
-               <img class="courses-box__img w-100" src=http://localhost:4000/courses/covers/${article.cover} alt="course">
+               <img class="courses-box__img w-100" src=https://sabz.liara.run/courses/covers/${article.cover} alt="course">
               </a>
               <div class="card-body article-card__content">
                 <a href="#" class="article-card__link">
@@ -349,7 +349,7 @@ const getAndShowNavbarMenus = async () => {
     "#menuWrapperResponsive"
   );
 
-  const res = await fetch("http://localhost:4000/v1/menus");
+  const res = await fetch("https://sabz.liara.run/v1/menus");
   const menus = await res.json();
 
   menus.forEach((menu) => {
@@ -468,7 +468,7 @@ const getAndShowCategoryCourses = async () => {
   const getKeyUrl = getUrlParam("cat").split("/").pop();
 
   const res = await fetch(
-    `http://localhost:4000/v1/courses/category/${getKeyUrl}`
+    `https://sabz.liara.run/v1/courses/category/${getKeyUrl}`
   );
   const data = await res.json();
   return data;
@@ -487,7 +487,7 @@ const insetHtmlCoursesBoxTemplate = (data, showType, parentElement) => {
       <div class="col-lg-4 col-md-6 col-12">
       <div class="courses__box rounded-4 overflow-hidden">
       <a href="#">
-      <img class="courses-box__img w-100" src=http://localhost:4000/courses/covers/${
+      <img class="courses-box__img w-100" src=https://sabz.liara.run/courses/covers/${
         course.cover
       }
         </a>
@@ -567,7 +567,7 @@ const insetHtmlCoursesBoxTemplate = (data, showType, parentElement) => {
                           <div class="col-12">
                           <div class="courses__box rounded-4 overflow-hidden d-flex gap-3">
                           <a href="#">
-                          <img class="courses-box__img w-100 h-100" src=http://localhost:4000/courses/covers/${
+                          <img class="courses-box__img w-100 h-100" src=https://sabz.liara.run/courses/covers/${
                             course.cover
                           }
                             </a>
@@ -698,7 +698,7 @@ const getOneCourse = () => {
   let sessionCourses = $.querySelector(".session-courses");
   let commentsContent = $.querySelector(".comments__content");
 
-  fetch(`http://localhost:4000/v1/courses/${courseShortName}`, {
+  fetch(`https://sabz.liara.run/v1/courses/${courseShortName}`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${getToken()}`,
@@ -749,7 +749,7 @@ const getOneCourse = () => {
 
             if (result.isConfirmed) {
               const res = await fetch(
-                `http://localhost:4000/v1/courses/${course._id}/register`,
+                `https://sabz.liara.run/v1/courses/${course._id}/register`,
                 {
                   method: "POST",
                   headers: {
@@ -798,7 +798,7 @@ const getOneCourse = () => {
 
               if (!discountResult.isConfirmed) {
                 const res = await fetch(
-                  `http://localhost:4000/v1/courses/${course._id}/register`,
+                  `https://sabz.liara.run/v1/courses/${course._id}/register`,
                   {
                     method: "POST",
                     headers: {
@@ -835,7 +835,7 @@ const getOneCourse = () => {
                   console.log(code);
 
                   if (code.isConfirmed) {
-                    await fetch(`http://localhost:4000/v1/offs/${code.value}`, {
+                    await fetch(`https://sabz.liara.run/v1/offs/${code.value}`, {
                       method: "POST",
                       headers: {
                         Authorization: `Bearer ${getToken()}`,
@@ -876,7 +876,7 @@ const getOneCourse = () => {
                           );
                         } else {
                           fetch(
-                            `http://localhost:4000/v1/courses/${course._id}/register`,
+                            `https://sabz.liara.run/v1/courses/${course._id}/register`,
                             {
                               method: "POST",
                               headers: {
@@ -1123,7 +1123,7 @@ const getRelatedCourses = async () => {
   const courseRelatedContent = document.querySelector(
     ".course-info__courses-list"
   );
-  await fetch(`http://localhost:4000/v1/courses/related/${courseShortName}`)
+  await fetch(`https://sabz.liara.run/v1/courses/related/${courseShortName}`)
     .then((res) => res.json())
     .then((data) => {
       data.forEach((course) => {
@@ -1132,7 +1132,7 @@ const getRelatedCourses = async () => {
           `
             <li class="course-info__courses-list-item">
             <a href="#" class="course-info__courses-list-link">
-            <img src=http://localhost:4000/courses/covers/${course.cover} class="courses-list-item__img" alt="Course cover">
+            <img src=https://sabz.liara.run/courses/covers/${course.cover} class="courses-list-item__img" alt="Course cover">
             <span>${course.name}</span>
             </a>
             
@@ -1154,7 +1154,7 @@ const getOneSession = async () => {
     ".episode-header__left-text"
   );
   let episodeContentVideo = document.querySelector(".episode-content__video");
-  fetch(`http://localhost:4000/v1/courses/${courseShortName}/${sessionID}`, {
+  fetch(`https://sabz.liara.run/v1/courses/${courseShortName}/${sessionID}`, {
     method: "GET",
     headers: {
       Authorization: ` Bearer ${getToken()}`,
@@ -1196,10 +1196,10 @@ const getOneSession = async () => {
       });
 
       episodeHeaderLeftTitle.innerHTML = data.session.title;
-      // episodeContentVideo.dataset.src = `http://localhost:4000/courses/covers/${data.session.video}`
+      // episodeContentVideo.dataset.src = `https://sabz.liara.run/courses/covers/${data.session.video}`
       episodeContentVideo.setAttribute(
         "src",
-        `http://localhost:4000/courses/covers/${data.session.video}`
+        `https://sabz.liara.run/courses/covers/${data.session.video}`
       );
     });
 };
@@ -1219,7 +1219,7 @@ const contactUs = async () => {
     body: messageBodyInput.value.trim(),
   };
 
-  fetch("http://localhost:4000/v1/contact", {
+  fetch("https://sabz.liara.run/v1/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -1270,7 +1270,7 @@ const globalSearch = async () => {
   let articlesWrapper = document.querySelector("#articles-wrapper");
   let getSearchValue = getUrlParam("value");
   console.log(getSearchValue);
-  fetch(`http://localhost:4000/v1/search/${getSearchValue}`)
+  fetch(`https://sabz.liara.run/v1/search/${getSearchValue}`)
     .then((res) => res.json())
     .then((data) => {
       // !! allResultCourses from Search
@@ -1285,7 +1285,7 @@ const globalSearch = async () => {
       <div class="col-lg-4 col-md-6 col-12">
       <div class="courses__box rounded-4 overflow-hidden">
      <a href="course.html?name=${course.shortName}">
-      <img class="courses-box__img w-100" src=http://localhost:4000/courses/covers/${
+      <img class="courses-box__img w-100" src=https://sabz.liara.run/courses/covers/${
         course.cover
       }
         </a>
@@ -1373,7 +1373,7 @@ const globalSearch = async () => {
                         <div class="col-lg-4 col-md-6 col-12">
                   <div class="card article__card">
                     <a href="#" class="article-card__link-img">
-                    <img class="courses-box__img w-100" src=http://localhost:4000/courses/covers/${article.cover} alt="course">
+                    <img class="courses-box__img w-100" src=https://sabz.liara.run/courses/covers/${article.cover} alt="course">
                     </a>
                     <div class="card-body article-card__content">
                       <a href="#" class="article-card__link">
@@ -1422,7 +1422,7 @@ const sendComment = async () => {
     score: score,
   };
 
-  await fetch(`http://localhost:4000/v1/comments`, {
+  await fetch(`https://sabz.liara.run/v1/comments`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${getToken()}`,
@@ -1460,7 +1460,7 @@ const sendComment = async () => {
 
 // ? get All courses and show it in the Courses page
 const ShowAllCoursesInCoursesPage = async () => {
-  const res = await fetch("http://localhost:4000/v1/courses");
+  const res = await fetch("https://sabz.liara.run/v1/courses");
   const courses = await res.json();
 
   return courses;

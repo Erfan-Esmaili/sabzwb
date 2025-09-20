@@ -19,7 +19,7 @@ const getCategoryArticles = async () => {
   let categoryArticlesWrapper = document.querySelector(".category-list");
   let coverInputElem = document.querySelector("#cover");
 
-  const res = await fetch("http://localhost:4000/v1/category");
+  const res = await fetch("https://sabz.liara.run/v1/category");
   const categoryArticles = await res.json();
 
   categoryArticles.forEach((category) => {
@@ -51,7 +51,7 @@ const createNewArticle = async () => {
   formData.append("categoryID", categoryID);
   formData.append("cover", coverArticleFile);
 
-  const res = await fetch("http://localhost:4000/v1/articles", {
+  const res = await fetch("https://sabz.liara.run/v1/articles", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${getToken()}`,
@@ -69,7 +69,7 @@ const getAndShowAllArticles = async () => {
   let articlesWrapper = document.querySelector(".table tbody");
   articlesWrapper.innerHTML = "";
 
-  const res = await fetch("http://localhost:4000/v1/articles", {
+  const res = await fetch("https://sabz.liara.run/v1/articles", {
     Authorization: `Bearer ${getToken}`,
   });
   const articles = await res.json();
@@ -121,7 +121,7 @@ const deleteArticle = async (articleID) => {
 
         
         
-        const res = await fetch(`http://localhost:4000/v1/articles/${articleID}`, {
+        const res = await fetch(`https://sabz.liara.run/v1/articles/${articleID}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${getToken()}`,

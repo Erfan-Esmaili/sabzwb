@@ -21,7 +21,7 @@ const register = async () => {
   };
 
   if (passwordInput.value.trim() === confirmPasswordInput.value.trim()) {
-    await fetch(`http://localhost:4000/v1/auth/register`, {
+    await fetch(`https://sabz.liara.run/v1/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -115,7 +115,7 @@ const login = () => {
     password: passwordInput.value.trim(),
   };
 
-  fetch(`http://localhost:4000/v1/auth/login`, {
+  fetch(`https://sabz.liara.run/v1/auth/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -164,7 +164,7 @@ const login = () => {
 const getMe = async () => {
   getToken();
 
-  const res = await fetch(`http://localhost:4000/v1/auth/me`, {
+  const res = await fetch(`https://sabz.liara.run/v1/auth/me`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${getToken()}`,

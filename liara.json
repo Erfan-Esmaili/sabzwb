@@ -1,8 +1,0 @@
-{
-  "app": "sabzweb",
-  "port": 80,
-  "build": {
-    "location": "germany"
-  },
-  "disks": []
-}

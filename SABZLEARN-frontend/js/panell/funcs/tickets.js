@@ -3,7 +3,7 @@ import { getToken, showSwal, convertDateToShamsi } from "../../funcs/utils.js";
 const getAndShowAllTickets = async () => {
   let ticketsWrapper = document.querySelector(".table tbody");
 
-  await fetch("http://localhost:4000/v1/tickets", {
+  await fetch("https://sabz.liara.run/v1/tickets", {
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },
@@ -69,7 +69,7 @@ const answerToTicket =async (ticketID) => {
     confirmButtonText: "ثبت",
   }).then(async (body) => {
     if (body.isConfirmed) {
-      await fetch(`http://localhost:4000/v1/tickets/answer`, {
+      await fetch(`https://sabz.liara.run/v1/tickets/answer`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${getToken()}`,

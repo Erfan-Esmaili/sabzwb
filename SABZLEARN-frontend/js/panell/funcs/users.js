@@ -3,7 +3,7 @@ import { getToken, showSwal } from "../../funcs/utils.js";
 const getAndShowUsers = async () => {
   let usersWrapper = document.querySelector("table tbody");
   usersWrapper.innerHTML = "";
-  await fetch("http://localhost:4000/v1/users", {
+  await fetch("https://sabz.liara.run/v1/users", {
     headers: {
       Authorization: `Bearer ${getToken()}`,
     },
@@ -60,7 +60,7 @@ const deleteUser = async (userID) => {
     "",
     async (result) => {
       if (result.isConfirmed) {
-        await fetch(`http://localhost:4000/v1/users/${userID}`, {
+        await fetch(`https://sabz.liara.run/v1/users/${userID}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${getToken()}`,
@@ -99,7 +99,7 @@ const banUser = async (userID) => {
     "",
     async (result) => {
       if (result.isConfirmed) {
-        await fetch(`http://localhost:4000/v1/users/ban/${userID}`, {
+        await fetch(`https://sabz.liara.run/v1/users/ban/${userID}`, {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${getToken()}`,
@@ -146,7 +146,7 @@ const register = async () => {
   };
 
   if (passwordInput.value.trim() === confirmPasswordInput.value.trim()) {
-    await fetch(`http://localhost:4000/v1/auth/register`, {
+    await fetch(`https://sabz.liara.run/v1/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -230,7 +230,7 @@ const changeRole = (userID) => {
     })
     .then(async (res) => {
       if (res.isConfirmed) {
-        await fetch(`http://localhost:4000/v1/users/${userID}`, {
+        await fetch(`https://sabz.liara.run/v1/users/${userID}`, {
           method: "PUT",
           headers: {
             Authorization: `Bearer ${getToken()}`,
@@ -278,7 +278,7 @@ const editAdminInfo = async () => {
     phone: phoneInputElem.value.trim(),
   };
 
-  await fetch("http://localhost:4000/v1/users", {
+  await fetch("https://sabz.liara.run/v1/users", {
     method: "PUT",
     headers: {
       Authorization: `Bearer ${getToken()}`,

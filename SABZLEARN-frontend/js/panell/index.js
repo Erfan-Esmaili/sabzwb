@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
     if (admin.role === "ADMIN") {
       adminName.innerHTML = admin.name;
       adminNameWelcome.innerHTML = admin.name;
-      //   profileAdminElem.setAttribute('src' ,`http://localhost:4000/courses/covers/${
+      //   profileAdminElem.setAttribute('src' ,`https://sabz.liara.run/courses/covers/${
       //   admin.profile
       // }`);
     } else {

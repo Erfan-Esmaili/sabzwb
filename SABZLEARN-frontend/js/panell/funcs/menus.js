@@ -5,7 +5,7 @@ let categoryMenusID = null;
 const getAndShowMenus = async () => {
   let menusWrapperElem = document.querySelector(".item-menus");
   menusWrapperElem.innerHTML=''
-  await fetch("http://localhost:4000/v1/menus/all")
+  await fetch("https://sabz.liara.run/v1/menus/all")
     .then((res) => res.json())
     .then((data) => {
       data.forEach((menu, index) => {
@@ -42,7 +42,7 @@ const getAndShowMenus = async () => {
 const getCategoryMenus = async () => {
   let parentMenusElem = document.querySelector("#parentMenus");
 
-  await fetch("http://localhost:4000/v1/menus")
+  await fetch("https://sabz.liara.run/v1/menus")
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
@@ -71,7 +71,7 @@ const createNewMenu = async () => {
     parent: categoryMenusID,
   };
 
-  await fetch("http://localhost:4000/v1/menus", {
+  await fetch("https://sabz.liara.run/v1/menus", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -111,7 +111,7 @@ const removeMenu = async (menuID) => {
     "",
     async (result) => {
       if (result.isConfirmed) {
-        await fetch(`http://localhost:4000/v1/menus/${menuID}`, {
+        await fetch(`https://sabz.liara.run/v1/menus/${menuID}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${getToken()}`,

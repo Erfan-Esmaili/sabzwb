@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
       <div class="col-lg-4 col-md-6 col-12">
       <div class="courses__box rounded-4 overflow-hidden">
       <a href="course.html?name=${course.shortName}">
-      <img class="courses-box__img w-100" src=http://localhost:4000/courses/covers/${
+      <img class="courses-box__img w-100" src=https://sabz.liara.run/courses/covers/${
         course.cover
       } alt="course">
       </a>

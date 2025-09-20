@@ -9,7 +9,7 @@ let nameInputElem = document.querySelector("#name");
 
 const editUserInformation=async()=>{
 
- await fetch('http://localhost:4000/v1/auth/me',{
+ await fetch('https://sabz.liara.run/v1/auth/me',{
       headers:{
         Authorization : `Bearer ${getToken()}`
        }
@@ -38,7 +38,7 @@ const editAdminInfo = async () => {
   };
 
   if(passwordInputElem.value.trim() === repeatPasswordInputElem.value.trim()){
- await fetch("http://localhost:4000/v1/users", {
+ await fetch("https://sabz.liara.run/v1/users", {
     method: "PUT",
     headers: {
       Authorization: `Bearer ${getToken()}`,

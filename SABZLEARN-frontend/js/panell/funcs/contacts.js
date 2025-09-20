@@ -3,7 +3,7 @@ import { showSwal, getToken, convertDateToShamsi } from "../../funcs/utils.js";
 const getAllContact = async () => {
   let contactListTableElem = document.querySelector(".table tbody");
   contactListTableElem.innerHTML = "";
-  const res = await fetch("http://localhost:4000/v1/contact");
+  const res = await fetch("https://sabz.liara.run/v1/contact");
   const contact = res.json();
 
   contact.then((message) =>
@@ -61,7 +61,7 @@ const answerToMessage = async (userEmail) => {
     confirmButtonText: "ثبت پاسخ",
   }).then(async (result) => {
     if (result.isConfirmed && result.value.length > 0) {
-      await fetch("http://localhost:4000/v1/contact/answer", {
+      await fetch("https://sabz.liara.run/v1/contact/answer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -102,7 +102,7 @@ const removeAnswer = async (answerID) => {
     cancelButtonText: "خیر",
   }).then(async (result) => {
     if (result.isConfirmed) {
-      await fetch(`http://localhost:4000/v1/contact/${answerID}`, {
+      await fetch(`https://sabz.liara.run/v1/contact/${answerID}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "Application/json",

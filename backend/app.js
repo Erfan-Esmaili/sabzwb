@@ -2,6 +2,7 @@ const path = require("path");
 const express = require("express");
 const { setHeaders } = require("./middlewares/headers");
 const { errorHandler } = require("./middlewares/errors");
+const cors = require("cors");
 
 //*routes import
 const usersRoutes = require("./routes/v1/user");
@@ -20,6 +21,7 @@ const offsRoutes = require("./routes/v1/off");
 const ordersRoutes = require("./routes/v1/order");
 const ticketsRoutes = require("./routes/v1/ticket");
 
+
 const app = express();
 
 //* BodyPaser
@@ -32,7 +34,9 @@ app.use(setHeaders);
 //* Static Folder
 app.use(express.static(path.join(__dirname, "public")));
 
-
+app.use(cors({
+  origin: "*"   // یا آدرس فرانتت مثل "https://erfan-esmaili.github.io"
+}));
 
 //* Routes
 app.use("/v1/articles", articlesRoutes);
