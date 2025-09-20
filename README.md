@@ -33,7 +33,7 @@ This project uses several JavaScript libraries for enhanced frontend functionali
 - 📱 **Responsive Design**
 - 🧩 **Modular Code Structure**
 - ⚡ **Interactive Components** – Built with libraries like Swiper.js, CKEditor, SweetAlert2, CountUp.js, and Typewriter Effect.  
-
+- 🌐 **API Integration** – Fetches and displays dynamic data using APIs. 
 
 ## Quick Start
 
