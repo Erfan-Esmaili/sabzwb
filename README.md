@@ -40,7 +40,7 @@ This project uses several JavaScript libraries for enhanced frontend functionali
 **Clone the repository:**
 
 ```bash
-git clone https://github.com/Erfan-Esmaili/sabzwb.git
+https://github.com/Erfan-Esmaili/sabzweb.git
 ```
 
 
