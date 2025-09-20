@@ -31,6 +31,7 @@ This project uses several JavaScript libraries for enhanced frontend functionali
 ## Features
 
 - 📱 **Responsive Design**
+- 👤 **Admin Panel & CMS** – Includes a content management system for easy website management.  
 - 🧩 **Modular Code Structure**
 - ⚡ **Interactive Components** – Built with libraries like Swiper.js, CKEditor, SweetAlert2, CountUp.js, and Typewriter Effect.  
 - 🌐 **API Integration** – Fetches and displays dynamic data using APIs. 
